@@ -1,0 +1,48 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.bg-info {
+    background-color: #003A33!important;
+}
+
+.navbar {
+    height: 5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.538);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #7AC4E7;
+}
+
+img, svg {
+    vertical-align: middle;
+    height: 100px;
+    margin-top: -13px;
+}
+.mx-2 {
+    display: inherit;
+}
+
+.message,.account,.separator,.login{
+    height: 26px;
+    margin-top: 1rem;
+}
+
+.separator{
+    margin-top: 1.5rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/* .sticky + .content {
+    padding-top: 60px;
+  } */
