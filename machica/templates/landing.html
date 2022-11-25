@@ -1,0 +1,26 @@
+{%extends "base.html"%}
+{%block title%}Machica Dental Clinic{%endblock%}
+
+{%block content%}
+<section class="section-1 section-attrib">
+    <div class="section-content">
+        <div class="content-img">
+            <img class="home-logo" src="{{url_for('static', filename='images/home-logo.png')}}" alt="">
+            <img class="home-divider" src="{{url_for('static', filename='images/home_rec.png')}}" alt="">
+        </div>
+        <div class="site-name">
+            <p>Machica
+               Dental
+               Clinic
+            </p>
+            <div class="site-buttons">
+                <div class="site-btn book-online"><a href="#">Book Online</a></div>
+                <div class="site-btn contact-us"><a href="#">Contact Us</a></div>
+            </div>
+        </div>
+        <div class="home-doctor">
+            <img src="{{url_for('static', filename='images/doctor_logo.png')}}" alt="">
+        </div>
+    </div>
+</section>
+{%endblock%}

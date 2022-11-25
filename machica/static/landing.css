@@ -12,6 +12,7 @@
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
+    margin-left: -2rem;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -20,8 +21,8 @@
 
 img, svg {
     vertical-align: middle;
-    height: 100px;
-    margin-top: -13px;
+    height: 118px;
+    margin-top: -4px;
 }
 .mx-2 {
     display: inherit;
@@ -32,17 +33,110 @@ img, svg {
     margin-top: 1rem;
 }
 
+.message{
+    margin-left: -4rem;
+}
+
 .separator{
     margin-top: 1.5rem;
 }
 
+
+
+/*sections------------------------------------------------------------------------------*/
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-/* .sticky + .content {
-    padding-top: 60px;
-  } */
+.section-1{ 
+    /* margin-top: 5rem; */
+    background-image:linear-gradient(to left, rgba(152, 157, 154, 0.586),rgba(42, 152, 137, 0.701)), url('../static/images/home_img.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-img{
+    margin-left: 5rem;
+}
+
+.content-img img{
+    height: 18rem;
+    margin-top: 13rem;
+}
+
+.home-divider{
+    margin-left: 2rem;
+}
+.site-name{
+    margin-top: 13rem;
+    margin-left: 1rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-name p{
+    font-size: 5rem;
+    color: white;
+    line-height: 5rem;
+}
+
+.site-buttons {
+    display: flex;
+    flex-direction: row;
+    place-self: flex-start;
+    margin-left: -2rem;
+    margin-top: 0.65rem;
+}
+
+.site-btn {
+    width: 7rem;
+    text-align: -webkit-center;
+    border-radius: 17px;
+    margin-left: 2rem;
+}
+
+.book-online{
+    background-color: #003A33;
+}
+
+.book-online a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-us{
+    background-color: white;
+}
+.contact-us a{
+    text-decoration: none;
+    color:#003A33;
+}
+
+.home-doctor{
+    margin-top: 7.5rem;
+    margin-left: 23rem;
+}
+
+.home-doctor img{
+    height: 30.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+

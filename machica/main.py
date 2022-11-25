@@ -5,7 +5,7 @@ from settings import app,db
 
 @app.route('/')
 def landing():
-   return render_template('base.html')
+   return render_template('landing.html')
 
 
 
