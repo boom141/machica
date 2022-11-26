@@ -14,13 +14,85 @@
                Clinic
             </p>
             <div class="site-buttons">
-                <div class="site-btn book-online"><a href="#">Book Online</a></div>
-                <div class="site-btn contact-us"><a href="#">Contact Us</a></div>
+                <div class="site-btn book-online"><a href="#" style="font-weight:500">Book Online</a></div>
+                <div class="site-btn contact-us"><a href="#" style="font-weight:500">Contact Us</a></div>
             </div>
         </div>
         <div class="home-doctor">
             <img src="{{url_for('static', filename='images/doctor_logo.png')}}" alt="">
         </div>
+    </div>
+</section>
+<section class="section-2 section-attrib">
+    <div class="section-content">
+        <div class="content-img content-attrib">
+            <img class="about-divider" src="{{url_for('static', filename='images/about-divider.png')}}" alt="">
+        </div>
+        <div class="site-about">
+            <h1><span style="color: #003A33">"Your smile</span> is our passion"</h1><br>
+            <p style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                <br>
+                <br>
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+                content here', making it look like readable English.
+            </p>
+            <div class="site-buttons">
+                <div class="site-btn book-online"><a href="#" style="font-weight:500">read more...</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-3 section-attrib">
+    <div class="section-content-services">
+        <h1><span style="color: #003A33">Dental</span> Services</h1>
+        <div class="list-services">   
+            <div class="service-type">
+                <img src="{{url_for('static', filename='images/service-ico.png')}}" alt="">
+                <h5><span style="color: #003A33">Service</span> One</h5>
+                <p style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+            <div class="service-type">
+                <img src="{{url_for('static', filename='images/service-ico.png')}}" alt="">
+                <h5><span style="color: #003A33">Service</span> Two</h5>
+                <p style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+            <div class="service-type">
+                <img src="{{url_for('static', filename='images/service-ico.png')}}" alt="">
+                <h5><span style="color: #003A33">Service</span> Three</h5>
+                <p style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+            <div class="service-type">
+                <img src="{{url_for('static', filename='images/service-ico.png')}}" alt="">
+                <h5><span style="color: #003A33">Service</span> Four</h5>
+                <p style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+            <div class="service-type">
+                <img src="{{url_for('static', filename='images/service-ico.png')}}" alt="">
+                <h5><span style="color: #003A33">Service</span> Five</h5>
+                <p style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+            <div class="service-type">
+                <img src="{{url_for('static', filename='images/service-ico.png')}}" alt="">
+                <h5><span style="color: #003A33">Service</span> Six</h5>
+                <p style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-4 section-attrib">
+    <div class="section-content">
+        <div class="horizontal-product">
+            <div class="site-products">
+                  <h1>Products</h1>
+                  <img src="{{url_for('static', filename='images/product-logo.png')}}" alt="">
+            </div>
+            <div class="pr-entity pr-1"></div>
+            <div class="pr-entity pr-2"></div>
+        </div>
+        <div class="pr-entity pr-3"></div>
     </div>
 </section>
 {%endblock%}

@@ -1,11 +1,14 @@
 *{
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 .bg-info {
     background-color: #003A33!important;
 }
 
 .navbar {
+    position: absolute;
+    z-index: 5;
     height: 5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.538);
 }
@@ -49,11 +52,13 @@ img, svg {
     top: 0;
     width: 100%;
 }
+.section-attrib{
+    height: 100vh;
+}
 
 .section-1{ 
     /* margin-top: 5rem; */
     background-image:linear-gradient(to left, rgba(152, 157, 154, 0.586),rgba(42, 152, 137, 0.701)), url('../static/images/home_img.jpg');
-    height: 100vh;
     background-size: cover;
     background-position: center;
 }
@@ -61,15 +66,17 @@ img, svg {
 .section-content{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .content-img{
     margin-left: 5rem;
+    margin-top: 13rem
 }
 
-.content-img img{
+.home-logo, .home-divider{
     height: 18rem;
-    margin-top: 13rem;
 }
 
 .home-divider{
@@ -100,7 +107,7 @@ img, svg {
 .site-btn {
     width: 7rem;
     text-align: -webkit-center;
-    border-radius: 17px;
+    border-radius: 17px; 
     margin-left: 2rem;
 }
 
@@ -123,7 +130,7 @@ img, svg {
 
 .home-doctor{
     margin-top: 7.5rem;
-    margin-left: 23rem;
+    margin-left: 18rem;
 }
 
 .home-doctor img{
@@ -131,12 +138,148 @@ img, svg {
 }
 
 
+.content-attrib {
+    border-radius: 45px;
+    background-color: #003A33;
+    height: 16rem;
+    width: 27rem;
+    margin-top: 16rem;
+    margin-left: -40rem;
+}
+
+.content-attrib::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 51rem;
+    margin-left: 7rem;
+    background-image: url('../static/images/about-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 18rem;
+    width: 27rem;
+    z-index: 2;
+    border-radius: 45px;
+}
+
+.about-divider {
+    margin-left: 29rem;
+    margin-top: -4rem;
+    height: 21rem;
+}
+
+.site-about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13rem;
+    margin-left: 5rem;
+    margin-right: -43rem;
+    width: 33rem;
+}
+
+.site-about p{
+    font-size: 1rem;
+    color: black;
+    line-height: 17px;
+}
+.section-3{
+    background-color: #afaaaa65;
+}
+
+.section-content-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-content-services h1 {
+    margin-top: 7rem;
+    font-size: 4rem;
+}
+
+.list-services{
+    display: grid;
+    grid-template-columns: repeat(3,10rem);
+    grid-template-rows: repeat(2,10rem);
+    margin-top: 2rem;
+    grid-gap: 2rem;
+}
+.service-type{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.81);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.list-services img{
+    height: 50px;
+    width: 50px;
+}
+
+.section-4{
+    height: 120vh;
+}
 
 
 
+.horizontal-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40rem;
+    margin-top: 8rem;
+}
 
+.site-products{
+    width: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 17rem;
+}
 
+.site-products img{
+    height: 5rem;
+}
 
+.site-products h1{
+    font-size: 5rem;
+}
+.pr-entity {
+    height: 15rem;
+    width: 35rem;
+    border-radius: 45px;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.533);
+}
 
+.pr-1{
+    background-image:linear-gradient(rgba(152, 157, 154, 0),rgb(42, 152, 137, 0.442)), url('../static/images/floss.png');
+    background-size: cover;
+    background-position: center;
+}
 
+.pr-2{
+    background-image:linear-gradient(rgba(152, 157, 154, 0),rgba(42, 152, 137, 0.442)), url('../static/images/toothpaste.png');
+    background-size: cover;
+    background-position: center;
+}
 
+.pr-3 {
+    background-image: linear-gradient(rgba(152, 157, 154, 0),rgba(42, 152, 137, 0.442)), url('../static/images/toothbrush.png');
+    background-size: cover;
+    background-position: center;
+    height: 31rem;
+    width: 20rem;
+    margin-top: 16rem;
+    margin-left: 2rem;
+}
