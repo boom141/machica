@@ -10,7 +10,7 @@
     <title>{%block title%}{%endblock%}</title>
 </head>
 <body>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-info p-3">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-color p-3">
         <div class="container-fluid">
           <div class="navbar-brand">
             <img src="{{url_for('static', filename='images/nav_logo.png')}}" alt="">
@@ -22,33 +22,17 @@
           <div class=" collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto ">
               <li class="nav-item">
-                <a class="nav-link mx-2" aria-current="page" href="#">Home</a>
+                <a class="nav-link mx-2 " href="#section-1">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2" href="#">About us</a>
+                <a class="nav-link mx-2" href="#section-2">About us</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Service 1</a></li>
-                  <li><a class="dropdown-item" href="#">Service 2</a></li>
-                  <li><a class="dropdown-item" href="#">Service 3</a></li>
-                  <li><a class="dropdown-item" href="#">Service 4</a></li>
-                  <li><a class="dropdown-item" href="#">Service 5</a></li>
-                  <li><a class="dropdown-item" href="#">Service 6</a></li>
-                </ul>
+                <a class="nav-link mx-2" href="#section-3">Services</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Products
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Toothbrush</a></li>
-                  <li><a class="dropdown-item" href="#">Floss</a></li>
-                  <li><a class="dropdown-item" href="#">Tootpaste</a></li>
-                </ul>
+                <a class="nav-link mx-2" href="#section-4">Products</a>
+
               </li>
             </ul>
             <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">

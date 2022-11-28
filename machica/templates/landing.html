@@ -3,7 +3,7 @@
 
 {%block content%}
 <section class="section-1 section-attrib">
-    <div class="section-content">
+    <div id="section-1" class="section-content">
         <div class="content-img">
             <img class="home-logo" src="{{url_for('static', filename='images/home-logo.png')}}" alt="">
             <img class="home-divider" src="{{url_for('static', filename='images/home_rec.png')}}" alt="">
@@ -15,7 +15,7 @@
             </p>
             <div class="site-buttons">
                 <div class="site-btn book-online"><a href="#" style="font-weight:500">Book Online</a></div>
-                <div class="site-btn contact-us"><a href="#" style="font-weight:500">Contact Us</a></div>
+                <div class="site-btn contact-us"><a href="#section-5" style="font-weight:500">Contact Us</a></div>
             </div>
         </div>
         <div class="home-doctor">
@@ -23,9 +23,10 @@
         </div>
     </div>
 </section>
-<section class="section-2 section-attrib">
+<section id="section-2" class="section-2 section-attrib">
     <div class="section-content">
         <div class="content-img content-attrib">
+            <img class="about-img" src="{{url_for('static', filename='images/about-img.jpg')}}" alt="">
             <img class="about-divider" src="{{url_for('static', filename='images/about-divider.png')}}" alt="">
         </div>
         <div class="site-about">
@@ -45,7 +46,7 @@
         </div>
     </div>
 </section>
-<section class="section-3 section-attrib">
+<section id="section-3" class="section-3 section-attrib">
     <div class="section-content-services">
         <h1><span style="color: #003A33">Dental</span> Services</h1>
         <div class="list-services">   
@@ -82,17 +83,70 @@
         </div>
     </div>
 </section>
-<section class="section-4 section-attrib">
+<section id="section-4" class="section-4 section-attrib">
     <div class="section-content">
         <div class="horizontal-product">
             <div class="site-products">
                   <h1>Products</h1>
                   <img src="{{url_for('static', filename='images/product-logo.png')}}" alt="">
             </div>
-            <div class="pr-entity pr-1"></div>
-            <div class="pr-entity pr-2"></div>
+            <div class="pr-entity pr-1">
+                <div class="site-order">
+                     <h2>Dental Floss</h2>
+                <div class="site-buttons">
+                    <div class="site-btn contact-us pre-order-btn on-hover"><a href="#" style="font-weight:500">pre-order</a></div>
+                </div>
+                </div>
+            </div>
+            <div class="pr-entity pr-2">
+                <div class="site-order">
+                     <h2>Toothpaste</h2>
+                <div class="site-buttons">
+                    <div class="site-btn contact-us pre-order-btn on-hover"><a href="#" style="font-weight:500">pre-order</a></div>
+                </div>
+                </div>
+            </div>
         </div>
-        <div class="pr-entity pr-3"></div>
+        <div class="pr-entity pr-3">
+            <div class="site-order site-order-vertical">
+                <h2>Toothbrush</h2>
+           <div class="site-buttons">
+               <div class="site-btn contact-us pre-order-btn-vertical on-hover"><a href="#" style="font-weight:500">pre-order</a></div>
+           </div>
+           </div>
+        </div>
+    </div>
+</section>
+<section id="section-5" class="section-5 section-attrib">
+    <div class="section-content">
+       <div class="site-trademark">
+            <img class="trademark-logo" src="{{url_for('static', filename='images/nav_logo.png')}}" alt="">
+            <img class="trademark-divider" src="{{url_for('static', filename='images/trademark-divider.png')}}" alt="">
+            <h6>Unit #1, G/F Aspiras Building, Consolacion Street</h6>
+            <div class="soc-med">
+                <a href="#">
+                    <img src="{{url_for('static', filename='images/facebook.png')}}" alt="">
+                </a>
+                <a href="#">
+                    <img src="{{url_for('static', filename='images/instagram.png')}}" alt="">
+                </a>
+                <a href="#">
+                    <img src="{{url_for('static', filename='images/twitter.png')}}" alt="">
+                </a>
+            </div>
+        </div>
+        <img class="form-img" src="{{url_for('static', filename='images/form-img.jpg')}}" alt="">
+        <form action="">
+            <h4>Inquiry? Chat us.</h4>
+            <input class="query-email" type="email" name="email" id="query-email" placeholder="Email">
+            <textarea class="query-message" name="message" id="query-message" placeholder="Message" rows="4" cols="50"></textarea>
+            <button class="site-btn" type="submit">Send mail</button>
+        </form>
+    </div>
+</section>
+<section id="section-6" class="section-6 section-attrib">
+    <div class="section-content">
+        <h6>Copyright © Machica Dental CLinic 2022</h6>
     </div>
 </section>
 {%endblock%}

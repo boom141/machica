@@ -1,22 +1,24 @@
 *{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    font-stretch:wider;
 }
-.bg-info {
-    background-color: #003A33!important;
+.bg-color {
+    background-color: #ffffff00;
 }
 
 .navbar {
-    position: absolute;
-    z-index: 5;
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 5rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.538);
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
     margin-left: -2rem;
 }
+
 
 .navbar-light .navbar-nav .nav-link:hover {
     color: #7AC4E7;
@@ -47,21 +49,29 @@ img, svg {
 
 
 /*sections------------------------------------------------------------------------------*/
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+
+
 .section-attrib{
     height: 100vh;
 }
 
+
+/*home-----------------------------------------------------------------------------*/
 .section-1{ 
-    /* margin-top: 5rem; */
+    margin-top: -5rem;
     background-image:linear-gradient(to left, rgba(152, 157, 154, 0.586),rgba(42, 152, 137, 0.701)), url('../static/images/home_img.jpg');
     background-size: cover;
     background-position: center;
+    height: 120vh;
 }
+
+
+.sticky {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.538);
+    background-color: #003A33;
+
+}
+
 
 .section-content{
     display: flex;
@@ -72,7 +82,7 @@ img, svg {
 
 .content-img{
     margin-left: 5rem;
-    margin-top: 13rem
+    margin-top: 19rem
 }
 
 .home-logo, .home-divider{
@@ -83,7 +93,7 @@ img, svg {
     margin-left: 2rem;
 }
 .site-name{
-    margin-top: 13rem;
+    margin-top: 18.5rem;
     margin-left: 1rem;
     width: 5rem;
     display: flex;
@@ -109,6 +119,7 @@ img, svg {
     text-align: -webkit-center;
     border-radius: 17px; 
     margin-left: 2rem;
+    transition: .4s cubic-bezier(0.21, 0.05, 0, 1.11);
 }
 
 .book-online{
@@ -128,16 +139,21 @@ img, svg {
     color:#003A33;
 }
 
+.site-btn:hover{
+    transform: scale(0.98);
+}
+
 .home-doctor{
-    margin-top: 7.5rem;
+    margin-top: 10.5rem;
     margin-left: 18rem;
 }
 
 .home-doctor img{
-    height: 30.8rem;
+    height: 35.5rem;
 }
 
 
+/*about------------------------------------------------------------------------------*/
 .content-attrib {
     border-radius: 45px;
     background-color: #003A33;
@@ -147,27 +163,17 @@ img, svg {
     margin-left: -40rem;
 }
 
-.content-attrib::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-top: 51rem;
-    margin-left: 7rem;
-    background-image: url('../static/images/about-img.jpg');
-    background-size: cover;
-    background-position: center;
+.about-img {
     height: 18rem;
     width: 27rem;
-    z-index: 2;
+    margin-top: -3rem;
+    margin-left: -1rem;
     border-radius: 45px;
 }
 
 .about-divider {
     margin-left: 29rem;
-    margin-top: -4rem;
+    margin-top: -19rem;
     height: 21rem;
 }
 
@@ -185,6 +191,9 @@ img, svg {
     color: black;
     line-height: 17px;
 }
+
+
+/*services------------------------------------------------------------------------------*/
 .section-3{
     background-color: #afaaaa65;
 }
@@ -219,6 +228,8 @@ img, svg {
     font-size: .8rem;
     text-align: center;
     padding-top: 1.5rem;
+    transition: .5s cubic-bezier(0.25, 0.1, 0, 1.02);
+    cursor: pointer;
 }
 
 .list-services img{
@@ -226,18 +237,24 @@ img, svg {
     width: 50px;
 }
 
+.service-type:hover{
+    border: 2px solid #003A33;
+    transform: scale(1.1);
+}
+
+/*products------------------------------------------------------------------------------*/
+
+
 .section-4{
     height: 120vh;
 }
-
-
 
 .horizontal-product {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 40rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 .site-products{
@@ -260,26 +277,187 @@ img, svg {
     width: 35rem;
     border-radius: 45px;
     box-shadow: 0 2px 0px rgba(0, 0, 0, 0.533);
+    transition: 5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: .8s cubic-bezier(0.25, 0.1, 0, 1.02);
+}
+
+.site-order{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: inherit;
+    margin-top: 4rem;
+}
+
+.site-order-vertical{
+    margin-top: 13rem;
+}
+
+.site-order h2{
+    color: white;
+    font-size: 4rem;
+}
+
+
+.site-order-vertical h2{
+    font-size: 3.5rem;
+}
+
+.pre-order-btn{
+    background-color: white;
+    margin-left: 16rem;
+}
+
+.pre-order-btn-vertical{
+    background-color: white;
+    margin-left: 9rem;
 }
 
 .pr-1{
-    background-image:linear-gradient(rgba(152, 157, 154, 0),rgb(42, 152, 137, 0.442)), url('../static/images/floss.png');
+    background-image:linear-gradient(rgba(152, 157, 154, 0),rgba(0, 58, 51, 0.559)), url('../static/images/floss.png');
     background-size: cover;
     background-position: center;
 }
 
 .pr-2{
-    background-image:linear-gradient(rgba(152, 157, 154, 0),rgba(42, 152, 137, 0.442)), url('../static/images/toothpaste.png');
+    background-image:linear-gradient(rgba(152, 157, 154, 0),rgb(0, 58, 51, 0.559)), url('../static/images/toothpaste.png');
     background-size: cover;
     background-position: center;
 }
 
 .pr-3 {
-    background-image: linear-gradient(rgba(152, 157, 154, 0),rgba(42, 152, 137, 0.442)), url('../static/images/toothbrush.png');
+    background-image: linear-gradient(rgba(152, 157, 154, 0),rgb(0, 58, 51, 0.559)), url('../static/images/toothbrush.png');
     background-size: cover;
     background-position: center;
     height: 31rem;
     width: 20rem;
-    margin-top: 16rem;
+    margin-top: 13rem;
     margin-left: 2rem;
+}
+
+
+
+.pr-1:hover{
+    background-image:linear-gradient(rgba(152, 157, 154, 0.523),rgb(0, 58, 51)), url('../static/images/floss.png');
+}
+
+.pr-2:hover{
+    background-image:linear-gradient(rgba(152, 157, 154, 0.523),rgb(0, 58, 51)), url('../static/images/toothpaste.png');
+}
+.pr-3:hover{
+    background-image:linear-gradient(rgba(152, 157, 154, 0.523),rgb(0, 58, 51)), url('../static/images/toothbrush.png');
+}
+
+.pr-entity:hover .site-order{
+    display: flex;
+}
+
+
+/*footer------------------------------------------------------------------------------*/
+
+.section-5{
+    background-color: #002438;
+    height:76.5vh;
+}
+
+.site-trademark{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 8rem;
+}
+
+.trademark-logo {
+    height: 20rem;
+    width: 19rem;
+}
+
+.trademark-divider {
+    margin-top: -5rem;
+    height: 0.1rem;
+    width: 21rem;
+}
+
+.site-trademark h6{
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.soc-med {
+    display: flex;
+    flex-direction: row;
+    width: 21rem;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.soc-med img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.form-img {
+    height: 29rem;
+    margin-top: .0rem;
+    margin-left: 6.5rem;
+}
+
+.section-content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 24rem;
+    height: 29rem;
+    padding: 1rem;
+    background-color: #457B9D;
+    text-align: center;
+}
+
+.query-message{
+    height: 15rem;
+}
+
+.query-email{
+    height: 3rem;
+}
+.section-content form input,textarea{
+    background-color: #457B9D;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    border: 2px solid #003A33;
+}
+
+.section-content form h4 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.section-content form button {
+    border: none;
+    color: #003A33;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-left: 0rem;
+}
+
+.section-content form input::placeholder,
+.section-content form textarea::placeholder{
+    color: #9C9C9C;
+}
+
+.section-6{
+    background-color: #001A28;
+    height: 10vh;
+}
+
+.section-content h6{
+    margin-top: 1.5rem;
+    color: white;
 }
