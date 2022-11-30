@@ -3,7 +3,7 @@
 
 {%block content%}
 <section class="section-1 section-attrib">
-    <div id="section-1" class="section-content">
+    <div id="home" class="section-content">
         <div class="content-img">
             <img class="home-logo" src="{{url_for('static', filename='images/home-logo.png')}}" alt="">
             <img class="home-divider" src="{{url_for('static', filename='images/home_rec.png')}}" alt="">
@@ -14,8 +14,8 @@
                Clinic
             </p>
             <div class="site-buttons">
-                <div class="site-btn book-online"><a href="#" style="font-weight:500">Book Online</a></div>
-                <div class="site-btn contact-us"><a href="#section-5" style="font-weight:500">Contact Us</a></div>
+                <div class="site-btn book-online"><a href="{{url_for('appointment')}}" style="font-weight:500">Book Online</a></div>
+                <div class="site-btn contact-us"><a href="#contacts" style="font-weight:500">Contact Us</a></div>
             </div>
         </div>
         <div class="home-doctor">
@@ -23,7 +23,7 @@
         </div>
     </div>
 </section>
-<section id="section-2" class="section-2 section-attrib">
+<section id="about" class="section-2 section-attrib">
     <div class="section-content">
         <div class="content-img content-attrib">
             <img class="about-img" src="{{url_for('static', filename='images/about-img.jpg')}}" alt="">
@@ -46,44 +46,44 @@
         </div>
     </div>
 </section>
-<section id="section-3" class="section-3 section-attrib">
+<section id="services" class="section-3 section-attrib">
     <div class="section-content-services">
         <h1><span style="color: #003A33">Dental</span> Services</h1>
         <div class="list-services">   
             <div class="service-type">
                 <img src="{{url_for('static', filename='images/service-ico.png')}}" alt="">
-                <h5><span style="color: #003A33">Service</span> One</h5>
+                <h5 class="h5-service"><span style="color: #003A33">Service</span> One</h5>
                 <p style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             </div>
             <div class="service-type">
                 <img src="{{url_for('static', filename='images/service-ico.png')}}" alt="">
-                <h5><span style="color: #003A33">Service</span> Two</h5>
+                <h5 class="h5-service"><span style="color: #003A33">Service</span> Two</h5>
                 <p style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             </div>
             <div class="service-type">
                 <img src="{{url_for('static', filename='images/service-ico.png')}}" alt="">
-                <h5><span style="color: #003A33">Service</span> Three</h5>
+                <h5 class="h5-service"><span style="color: #003A33">Service</span> Three</h5>
                 <p style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             </div>
             <div class="service-type">
                 <img src="{{url_for('static', filename='images/service-ico.png')}}" alt="">
-                <h5><span style="color: #003A33">Service</span> Four</h5>
+                <h5 class="h5-service"><span style="color: #003A33">Service</span> Four</h5>
                 <p style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             </div>
             <div class="service-type">
                 <img src="{{url_for('static', filename='images/service-ico.png')}}" alt="">
-                <h5><span style="color: #003A33">Service</span> Five</h5>
+                <h5 class="h5-service"><span style="color: #003A33">Service</span> Five</h5>
                 <p style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             </div>
             <div class="service-type">
                 <img src="{{url_for('static', filename='images/service-ico.png')}}" alt="">
-                <h5><span style="color: #003A33">Service</span> Six</h5>
+                <h5 class="h5-service"><span style="color: #003A33">Service</span> Six</h5>
                 <p style="font-weight:500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             </div>
         </div>
     </div>
 </section>
-<section id="section-4" class="section-4 section-attrib">
+<section id="products" class="section-4 section-attrib">
     <div class="section-content">
         <div class="horizontal-product">
             <div class="site-products">
@@ -94,7 +94,7 @@
                 <div class="site-order">
                      <h2>Dental Floss</h2>
                 <div class="site-buttons">
-                    <div class="site-btn contact-us pre-order-btn on-hover"><a href="#" style="font-weight:500">pre-order</a></div>
+                    <div class="site-btn contact-us pre-order-btn on-hover"><a href="{{url_for('order')}}" style="font-weight:500">pre-order</a></div>
                 </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                 <div class="site-order">
                      <h2>Toothpaste</h2>
                 <div class="site-buttons">
-                    <div class="site-btn contact-us pre-order-btn on-hover"><a href="#" style="font-weight:500">pre-order</a></div>
+                    <div class="site-btn contact-us pre-order-btn on-hover"><a href="{{url_for('order')}}" style="font-weight:500">pre-order</a></div>
                 </div>
                 </div>
             </div>
@@ -111,13 +111,13 @@
             <div class="site-order site-order-vertical">
                 <h2>Toothbrush</h2>
            <div class="site-buttons">
-               <div class="site-btn contact-us pre-order-btn-vertical on-hover"><a href="#" style="font-weight:500">pre-order</a></div>
+               <div class="site-btn contact-us pre-order-btn-vertical on-hover"><a href="{{url_for('order')}}" style="font-weight:500">pre-order</a></div>
            </div>
            </div>
         </div>
     </div>
 </section>
-<section id="section-5" class="section-5 section-attrib">
+<section id="contacts" class="section-5 section-attrib">
     <div class="section-content">
        <div class="site-trademark">
             <img class="trademark-logo" src="{{url_for('static', filename='images/nav_logo.png')}}" alt="">

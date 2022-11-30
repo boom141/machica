@@ -1,0 +1,55 @@
+{%extends "base.html"%}
+{%block title%}book online{%endblock%}
+
+{%block content%}
+<div class="nav-bg"></div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 border p-4 shadow bg-light">
+                <div class="col-12">
+                    <h3 class="fw-normal text-secondary fs-4  mb-4" style="color: black!important;">Appointment form</h3>
+                </div>
+                <form action="">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" placeholder="Phone number#">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="date" class="form-control" placeholder="Enter date">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="time" class="form-control" placeholder="Enter Email">
+                        </div>
+                        <div class="col-12">
+                            <select class="form-select">
+                                <option selected>Purpose Of Appointment</option>
+                                <option value="1">Service 1</option>
+                                <option value="2">Service 2</option>
+                                <option value="3">Service 3</option>
+                                <option value="4">Service 4</option>
+                                <option value="5">Service 5</option>
+                                <option value="6">Service 6</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12 mt-5">                        
+                            <button type="submit" class="btn btn-primary float-end">Book Appointment</button>
+                            <button type="button" class="btn btn-outline-secondary float-end me-2"><a href="{{url_for('landing')}}" class="form-cancel">Cancel</a></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{%endblock%}

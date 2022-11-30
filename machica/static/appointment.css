@@ -1,0 +1,31 @@
+.nav-bg{
+    height: 5rem;
+    width: 100%;
+    background-color: #003A33;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.927)!important;
+}
+
+.border {
+    border-radius: 18px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #003A33;
+    border-color: #003A33;
+}
+
+.btn-primary:hover{
+    background-color: #002823;
+}
+
+.payment-option{
+    font-weight: 300!important;
+    font-size: 1rem!important;
+    margin-top: 0.5rem!important;
+}
+
+.form-cancel{
+    text-decoration: none;
+    color: black;
+}
