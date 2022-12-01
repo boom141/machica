@@ -54,3 +54,12 @@ function active_onscroll(index){
 }
 }
 
+
+function appointment_page(){
+  window.location = window.location.href
+}
+
+
+function order_page(){
+  window.location = window.location.href
+}
